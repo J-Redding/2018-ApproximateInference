@@ -8,10 +8,15 @@ The observed variables {U_0, U_1,..., U_T} represent if somebody was observed wi
 Returns the probability distribution for P(R_T| U_0, U_1,...,U_T).
 
 The following probabilities are already known:
+
 P(R_0 = True) = 0.2
+
 P(R_t = True | R_(t - 1) = True) = 0.7
+
 P(R_t = True | R_(t - 1) = False) = 0.3
+
 P(U_t = True | R_t = True) = 0.9
+
 P(U_t = True | R_t = False) = 0.2
 
 Uses and returns both the likelihood weighted sampling and Gibbs sampling probability distributions.
